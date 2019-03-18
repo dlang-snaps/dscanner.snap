@@ -1,0 +1,28 @@
+name: dscanner
+version: 0.7.0
+summary: The D-Scanner is a tool for analyzing D source code
+description: |
+    The D-Scanner, is a cross platform tool for analyzing D source code. 
+    It's used by several text editors and IDE to get IDE-grade features.
+confinement: classic
+grade: stable
+
+apps:
+  dscanner:
+    command: bin/dscanner
+
+parts:
+  dscanner:
+    source: https://github.com/dlang-community/D-Scanner.git
+    source-tag: v0.7.0
+    source-type: git
+    plugin: make
+    makefile: makefile
+    make-parameters:
+      - DMD=/snap/bin/dmd
+    artifacts:
+      - bin/dscanner
+    build-snaps:
+    - dmd
+    build-packages:
+    - build-essential
