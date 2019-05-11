@@ -1,9 +1,10 @@
 name: dscanner
 version: 0.7.1
-summary: The D-Scanner is a tool for analyzing D source code
+summary: Developer tool for analyzing D source code
 description: |
-    The D-Scanner, is a cross platform tool for analyzing D source code. 
-    It's used by several text editors and IDE to get IDE-grade features.
+  Provides many useful analytical tools for source code written in the
+  D programming language, including statistics, style and syntax checks,
+  definition searches, and generation of CTAGS and AST.
 confinement: classic
 grade: stable
 
