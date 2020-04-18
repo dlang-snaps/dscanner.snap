@@ -1,5 +1,5 @@
 name: dscanner
-version: 0.8.0
+version: 0.9.0
 summary: Developer tool for analyzing D source code
 description: |
   Provides many useful analytical tools for source code written in the
@@ -15,7 +15,7 @@ apps:
 parts:
   dscanner:
     source: https://github.com/dlang-community/D-Scanner.git
-    source-tag: v0.8.0
+    source-tag: v0.9.0
     source-type: git
     plugin: make
     makefile: makefile
